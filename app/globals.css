@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; background: #ffffff; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; color: #0b1220; background: #ffffff; }
+.section-shell { width: min(1180px, calc(100% - 32px)); margin-inline: auto; }
+.grid-bg { background-image: linear-gradient(rgba(11, 18, 32, 0.045) 1px, transparent 1px), linear-gradient(90deg, rgba(11, 18, 32, 0.045) 1px, transparent 1px); background-size: 42px 42px; }
+.glass { background: rgba(255, 255, 255, 0.78); backdrop-filter: blur(18px); }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: 0.01ms !important; } }
